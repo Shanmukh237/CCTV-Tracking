@@ -1,1 +1,3 @@
-# calendar-application
+# Calendar-application
+
+The calendar application 
