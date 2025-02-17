@@ -1,8 +1,21 @@
 # CCTV - Tracking
 
-The Tracking of faces are simple if the person is not moving and the face or attributes on which the AI model is trained then the accuracy can be attained at higher rates.
-But when it comes to a moving obejct we need to assess the person to be identified and based on the attributes if there are similar attributes we can identify the person we are looking for, but from different angles that's where the big guns need to be used such as #Egien faces where the faces from -90 degree to +90 degree in X-axis and +90 degree to -90 degree in Y-axis.
-If there is any problem arises we need to use DeepLearning Methods for better accuracy of our model.
+The main.py consist of the deep learning code required for the person re-identifcation in a security footage.
+
+The data set I have collected is the famous and most popularly used in such scenarios of person re-identification is "Market 1501" where there are multiple cameras covering a single area and looks in different angles helping it understand the features underlying in the images provided .
+Thus data need to divided into two main slots those are training ,testing where around 12937 images ,19733 images respectively are given to the model for training and testing.
+And there are 751 classifications for the dataset.
+
+For feature Extraction I have used ResNet-50 and model consist of Convulution Layer(Conv2D),Batch Normalization,ReLU,MaxPool.
+
+The learning rate is optimum of '3e-4' which avoided the overfitting of data and underfitting of convergence.
+
+While training the main part is the 'epoch' where it tells how many times we train the data,When given a small number 5 it took around 1 hour and each time accuracy varied.
+
+The range of accuracy is 83.57% - 87.26% ,I tried to increase the epoch number for better accuracy but my system overheated so I stopped the execution of code.
 
 
-So for the 1st review the model is trained on my face for recognizing me in different angles.
+
+All the relevant information is provided by the Source:'https://asp-eurasipjournals.springeropen.com/articles/10.1186/s13634-024-01139-x'.
+
+Thank You for the oppurtunity for showcasing my skill.
